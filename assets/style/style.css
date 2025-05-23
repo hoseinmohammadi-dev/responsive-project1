@@ -1,0 +1,188 @@
+/* Global scope */
+main {
+
+    .portfolio,
+    .WorkExperience,
+    .Education {
+        width: 95%;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.288);
+        margin: 10px;
+    }
+
+    .portfolio {
+        height: auto;
+        padding-bottom: 20px;
+
+        >figure {
+            position: relative;
+
+            >img {
+                width: 100%;
+            }
+
+            >figcaption {
+                position: absolute;
+                left: 20px;
+                bottom: 20px;
+                font-size: 34px;
+                text-transform: capitalize;
+            }
+        }
+
+        .contact {
+
+            >li {
+                font-size: 16px;
+                color: #696969;
+                margin: 10px;
+            }
+        }
+
+        .skills,
+        .Languages {
+            margin-left: 10px;
+
+            >p {
+                color: #696969;
+                margin-block: 10px;
+            }
+
+            >div {
+                width: 95%;
+                height: 15px;
+                background-color: rgba(184, 184, 184, 0.459);
+                border-radius: 10px;
+
+                >article {
+                    width: 65%;
+                    height: 100%;
+                    background-color: #009688;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: white;
+
+                }
+
+                #skill-one {
+                    width: 95%;
+                }
+
+                #skill-two {
+                    width: 85%;
+                }
+
+                #skill-three {
+                    width: 70%;
+                }
+
+                #skill-four {
+                    width: 50%;
+                }
+            }
+        }
+
+        .Languages {
+            margin-top: 30px;
+
+            >div {
+
+                >article {
+                    width: 74%;
+
+
+                }
+
+                .aa {
+                    width: 40%;
+                }
+
+                .aaa {
+                    width: 86%;
+                }
+            }
+        }
+
+    }
+
+    /* Work Experiens & Education */
+
+    .WorkExperience , .Education{
+        padding:  10px 10px 20px;
+        height: auto;
+
+        >h2 {
+            font-size: 30px;
+            margin-bottom: 35px;
+
+            >i {
+                font-size: 36px;
+            }
+        }
+
+        >section {
+            margin-left: 15px;
+
+            >h3 {
+                color: #02b2a1ba;
+                margin-block: 15px;
+            }
+
+            >p {
+                color: #009688;
+
+                &:nth-child(2) {
+                    font-size: 16px;
+                    margin-block: 10px;
+                }
+
+                &:nth-child(3) {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+}
+
+/* Global scope */
+/* desctop */
+@media screen and (min-width:768px) {
+    main {
+        display: flex;
+
+
+        .portfolio {
+            width: 35%;
+            margin-right: 0;
+        }
+
+        >section {
+            width: 75%;
+
+            .WorkExperience {
+                width: 100%;
+            }
+
+            .Education {
+                width: 100%;
+            }
+        }
+
+
+    }
+}
+
+/* desctop */
+
+/* big scope */
+@media screen and (min-width:1240px) {
+    main {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* big scope */
